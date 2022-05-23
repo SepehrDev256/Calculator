@@ -1,0 +1,231 @@
+body{
+    font-family: 'Open Sans',sans-serif;
+    background: linear-gradient(to right,#43cea2,#185a9d);
+}
+#calculator{
+    width: 80%;
+    height: 700px;
+    background: #eaedef;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#container-operator-1{
+    width: 40%;
+    height: 80px;
+    margin-left: 800px;
+    position: relative;
+    top: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 50px;
+}
+#container-operator-2{
+    width: 40%;
+    height: 80px;
+    position: relative;
+    left: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 50px;
+}
+#container-keyboard{
+    width: 25%;
+    height: 320px;
+    position: relative;
+    right: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+#result{
+    height: 120px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+#keyboard{
+    height: 400px;
+}
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: #eaedef;
+}
+.number, .operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+@media only screen and (max-width: 1350px){
+    #container-operator-1{
+        width: 40%;
+        height: 80px;
+        margin-left: 800px;
+        position: relative;
+        top: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 50px;
+    }
+    #container-operator-2{
+        width: 40%;
+        height: 80px;
+        position: relative;
+        left: 350px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 50px;
+    }
+    #container-keyboard{
+        width: 35%;
+        height: 320px;
+        position: relative;
+        right: 200px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 150px;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 900px){
+    #container-operator-1{
+        width: 40%;
+        height: 80px;
+        margin-left: 800px;
+        position: relative;
+        top: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 50px;
+    }
+    #container-operator-2{
+        width: 40%;
+        height: 80px;
+        position: relative;
+        left: 270px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 50px;
+    }
+    #container-keyboard{
+        width: 45%;
+        height: 320px;
+        position: relative;
+        right: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 150px;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 700px){
+    #calculator{
+        width: 80%;
+        height: 900px;
+    }
+    #container-operator-1{
+        width: 40%;
+        height: 80px;
+        margin-left: 800px;
+        position: relative;
+        top: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 50px;
+    }
+    #container-operator-2{
+        width: 40%;
+        height: 80px;
+        position: relative;
+        left: 10px;
+        top: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 50px;
+    }
+    #container-keyboard{
+        width: 45%;
+        height: 320px;
+        position: relative;
+        top: 100px;
+        right:120px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 150px;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+}
+@media only screen and (max-width: 600px){
+    #container-keyboard{
+        width: 90%;
+        height: 100px;
+        position: relative;
+        top: 100px;
+        right: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 150px;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+}
